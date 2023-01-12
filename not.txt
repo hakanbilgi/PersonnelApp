@@ -13,3 +13,6 @@
 # Bir şirkette personel ile ilgili işlem yapacak iki farklı yetki vardır. admin  tüm yetkilere sahipken (ör: personel müdürü yeni bir personbel geldi eklenmesi lazım) diğeri ise örneğin  memur sadece mevcut personel hakkındaki bilgileri görebilir.
 
 
+# Normalde BRD dökümanında ne yazıyorsa ona göre yapıyı tasarlamak lazım eğer BRD de her birimden sorumlu personel sadece sorumlu olduğu birimde CRUD yapabilir denseydi o zaman ona göre  ilişkileri kurmamız lazım.
+
+
