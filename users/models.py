@@ -4,7 +4,7 @@ from django.conf import settings
 from datetime import date
 
 
-# Normal default user ı (ekstra fieldlar eklemek için) kullanmayıp kendimiz bir custom user oluşturmak istiyorsak o zaman  AbstractUser dan inherit ederek oluşturabiliriz(exdending user table).Aşağıdaki gibi...ya da yeni bir 
+# Normal default user ı (ekstra fieldlar eklemek için) kullanmayıp kendimiz bir custom user oluşturmak istiyorsak o zaman  AbstractUser dan inherit ederek oluşturabiliriz(exdending user table).Aşağıdaki gibi...ya da yeni bir tablo oluşturup bu tabloyu mevcut user tablosuna onetoone relations ile bağlarsak yeni tablomuza birçok yeni field (özellik) eklemiş oluruz...
 
 # class MyUser(AbstractUser):
 #   username = models.CharField(max_length = 50, blank = True, null = True, unique = True)

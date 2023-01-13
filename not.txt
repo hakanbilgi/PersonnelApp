@@ -43,7 +43,7 @@ birde admin.py a gidip bazı ayarları yapmamız gerekir.Aşagıdaki kodları ek
 
 
 ............................................................................
-#? 2. yöntem
+#? 2. yöntem ise yeni bir tablo oluşturup bu tabloyu mevcut user tablosuna onetoone relations ile bağlarsak yeni tablomuza birçok yeni field (özellik) eklemiş oluruz...
 
 # yeni bir tablo oluşturup, bunu onetoone ile mevcut User tablosuna bağlayarak yapma;
 # böylece mevcut User'lara ilave fieldlar ekleyebiliriz.
