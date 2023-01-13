@@ -210,4 +210,6 @@ REST_AUTH_SERIALIZERS = {
     
 }
 
+# yeni oluşturduğumuz custom User ı (exdending user table) buraya tanıtmamız lazım...
+
 # AUTH_USER_MODEL = 'users.MyUser'

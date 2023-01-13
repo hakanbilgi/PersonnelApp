@@ -1,11 +1,50 @@
-#? 1
+
+User tablomuzu genişletmek istiyorsak......
+
+#? 1.yöntem
+
 # User modeli --> class User(AbstractUser): inherit edilerek yapılmış
+
 # Biz de AbstractUser'dan  inherit ederek kendi User modelimizi oluşturabiliriz.
 # Buna exdending user table deniyor,
 
+# yeni oluşturduğumuz custom User ı (exdending user table) settings base.py a tanıtmamız lazım...ağşagıdaki gibi...
+
+# AUTH_USER_MODEL = 'users.MyUser'
+
+birde admin.py a gidip bazı ayarları yapmamız gerekir.Aşagıdaki kodları eklememiz gerekir...
+
+# from django.contrib import admin
+# from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+# from django.contrib.auth.admin import UserAdmin
+# from .models import MyUser
+# from  django.contrib.auth.forms import UserChangeForm
+
+# class UserAdmin(BaseUserAdmin):
+#    form = UserChangeForm
+#    fieldsets = (
+#        (None, {'fields': ('email', 'password', )}),
+#        (('Personal info'), {'fields': ('first_name', 'last_name')}),
+#        (('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser',
+#                                       'groups', 'user_permissions')}),
+#        (('Important dates'), {'fields': ('last_login', 'date_joined')}),
+#          (('user_info'), {'fields': ('native_name', 'phone_no')}),
+#    )
+#    add_fieldsets = (
+#        (None, {
+#            'classes': ('wide', ),
+#            'fields': ('email', 'password1', 'password2'),
+#        }),
+#    )
+#    list_display = ['email', 'first_name', 'last_name', 'is_staff', 'native_name', 'phone_no']
+#    search_fields = ('email', 'first_name', 'last_name')
+#    ordering = ('email', )
+# admin.site.register(MyUser, UserAdmin)
 
 
-#? 2
+............................................................................
+#? 2. yöntem
+
 # yeni bir tablo oluşturup, bunu onetoone ile mevcut User tablosuna bağlayarak yapma;
 # böylece mevcut User'lara ilave fieldlar ekleyebiliriz.
 
