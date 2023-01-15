@@ -213,3 +213,6 @@ REST_AUTH_SERIALIZERS = {
 # yeni oluşturduğumuz custom User ı (exdending user table) buraya tanıtmamız lazım...
 
 # AUTH_USER_MODEL = 'users.MyUser'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / "pictures"
